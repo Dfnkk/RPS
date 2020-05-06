@@ -12,7 +12,6 @@ function getPLayerOpp() {
 
 function compOpp() {
   var compNum = Math.floor(Math.random() * 3);
-  console.log(compNum);
   let opp;
   if (compNum === 0) {
     opp = 'rock';
@@ -41,8 +40,6 @@ function getWinner(user, comp) {
 const main = () => {
   let userInput = getPLayerOpp();
   let compInput = compOpp();
-  console.log(compInput)
-  console.log(getWinner(userInput, compInput));
   let answer = document.createElement('h1')
   let win = getWinner(userInput, compInput);
   if (win === false) {
