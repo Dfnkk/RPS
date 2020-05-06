@@ -44,6 +44,8 @@ const main = () => {
   let win = getWinner(userInput, compInput);
   if (win === false) {
     answer.innerHTML = 'You lost! w(ﾟДﾟ)w';
+  } else if (win === undefined) {
+
   } else {
     answer.innerHTML = 'You won!!! 😂 🤣 😁 😊';
   }
