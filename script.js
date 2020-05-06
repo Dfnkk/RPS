@@ -32,8 +32,6 @@ function getWinner(user, comp) {
     return false;
   } else if ((user === 'paper' && comp === 'rock') || (user === 'scissors' && comp === 'paper') || (user === 'rock' && user === 'scissors')) {
     return true;
-  } else {
-    alert('tie!');
   }
 }
 
@@ -45,7 +43,7 @@ const main = () => {
   if (win === false) {
     answer.innerHTML = 'You lost! w(ﾟДﾟ)w';
   } else if (win === undefined) {
-
+    answer.innerHTML = 'A tie =|';
   } else {
     answer.innerHTML = 'You won!!! 😂 🤣 😁 😊';
   }
