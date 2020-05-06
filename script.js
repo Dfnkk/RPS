@@ -54,3 +54,7 @@ const main = () => {
 };
 
 main();
+
+const playAgain = () => {
+  main();
+}
