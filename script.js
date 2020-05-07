@@ -1,3 +1,5 @@
+let time = 1;
+
 function getPLayerOpp() {
   let done = false;
   let playerInput = prompt('What do you choose');
@@ -41,12 +43,13 @@ const main = () => {
   let answer = document.createElement('h1')
   let win = getWinner(userInput, compInput);
   if (win === false) {
-    answer.innerHTML = 'You lost! w(ﾟДﾟ)w';
+    answer.innerHTML =  `${time}:` + ' You lost! w(ﾟДﾟ)w';
   } else if (win === undefined) {
     answer.innerHTML = 'A tie =|';
   } else {
     answer.innerHTML = 'You won!!! 😂 🤣 😁 😊';
   }
+  time++;
   document.body.appendChild(answer);
 };
 
