@@ -45,9 +45,9 @@ const main = () => {
   if (win === false) {
     answer.innerHTML =  `${time}:` + ' You lost! w(ﾟДﾟ)w';
   } else if (win === undefined) {
-    answer.innerHTML = 'A tie =|';
+    answer.innerHTML = `${time}:` + 'A tie =|';
   } else {
-    answer.innerHTML = 'You won!!! 😂 🤣 😁 😊';
+    answer.innerHTML = `${time}:` + 'You won!!! 😂 🤣 😁 😊';
   }
   time++;
   document.body.appendChild(answer);
