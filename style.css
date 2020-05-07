@@ -3,3 +3,8 @@ header {
   display: inline-flex;
   font-family: 'Oxygen', sans-serif;
 }
+
+.again {
+  position: fixed;
+  left: 15rem;
+}
