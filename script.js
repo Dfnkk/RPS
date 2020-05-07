@@ -69,6 +69,10 @@ const main = () => {
   }
   time++;
   document.body.appendChild(answer);
+  let winS = document.getElementById('winStreak');
+  winS.innerHTML = winStreak;
+  let noL = document.getElementById('nolose');
+  noL.innerHTML = nolose;
 };
 
 main();
