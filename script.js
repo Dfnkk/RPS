@@ -31,9 +31,9 @@ function compOpp() {
 
 function getWinner(user, comp) {
   // false is lost true is won
-  if ((user === 'rock' && comp === 'paper') || (user === 'paper' && comp === 'scissors') || (user === 'scissors' && user === 'rock')) {
+  if ((user === 'rock' && comp === 'paper') || (user === 'paper' && comp === 'scissors') || (user === 'scissors' && comp === 'rock')) {
     return false;
-  } else if ((user === 'paper' && comp === 'rock') || (user === 'scissors' && comp === 'paper') || (user === 'rock' && user === 'scissors')) {
+  } else if ((user === 'paper' && comp === 'rock') || (user === 'scissors' && comp === 'paper') || (user === 'rock' && comp === 'scissors')) {
     return true;
   }
 }
