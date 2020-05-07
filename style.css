@@ -7,4 +7,22 @@ header {
 .again {
   position: fixed;
   left: 15rem;
+  background-color: black;
+  color: white;
 }
+
+h1 {
+  border: 3px dotted red;
+  display: block;
+}
+
+.title {
+  border: none;
+  display: inline-block;
+}
+
+body {
+  background: black;
+  color: white; 
+}
+
