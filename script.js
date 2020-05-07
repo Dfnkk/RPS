@@ -1,5 +1,6 @@
 let time = 1;
 let element;
+let winnineStreak = 0;
 
 function getPLayerOpp() {
   let done = false;
