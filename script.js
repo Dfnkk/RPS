@@ -1,4 +1,5 @@
 let time = 1;
+let element;
 
 function getPLayerOpp() {
   let done = false;
@@ -44,10 +45,19 @@ const main = () => {
   let win = getWinner(userInput, compInput);
   if (win === false) {
     answer.innerHTML =  `${time}:` + ' You lost! w(ﾟДﾟ)w';
+    element = document.createElement('tr');
+    element.innerHTML = `<th>${userInput}</th><th>${compInput}</th>`;
+    document.body.querySelector('table').querySelector('tbody').appendChild(element);
   } else if (win === undefined) {
     answer.innerHTML = `${time}:` + 'A tie =|';
+    element = document.createElement('tr');
+    element.innerHTML = `<th>${userInput}</th><th>${compInput}</th>`;
+    document.body.querySelector('table').querySelector('tbody').appendChild(element);
   } else {
     answer.innerHTML = `${time}:` + 'You won!!! 😂 🤣 😁 😊';
+    element = document.createElement('tr');
+    element.innerHTML = `<th>${userInput}</th><th>${compInput}</th>`;
+    document.body.querySelector('table').querySelector('tbody').appendChild(element);
   }
   time++;
   document.body.appendChild(answer);
